@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '../styles/style.css';
+@import '../styles/header.css';
+
+/* Rightous */
+@font-face {
+  font-family: 'Righteous';
+  src: url('../asset/Righteous/Righteous-Regular.woff2') format('woff2'),
+      url('../asset/Righteous/Righteous-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Gilori */
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../asset/Gilory/Gilroy-Medium.woff2') format('woff2'),
+      url('../asset/Gilory/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../asset/Gilory/Gilroy-SemiBold.woff2') format('woff2'),
+      url('../asset/Gilory/Gilroy-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../asset/Gilory/Gilroy-Regular.woff2') format('woff2'),
+      url('../asset/Gilory/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../asset/Gilory/Gilroy-Light.woff2') format('woff2'),
+      url('../asset/Gilory/Gilroy-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../asset/Gilory/Gilroy-Bold.woff2') format('woff2'),
+      url('../asset/Gilory/Gilroy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Righteous';
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+@layer components{
+  body{
+    @apply text-base overflow-x-hidden font-normal;
+    -webkit-text-size-adjust: 100%;
+  }
+  textarea, input[type="text"], input[type="number"], input[type="email"], input[type="tel"], select{
+    @apply block border-none outline-none text-base font-normal text-white m-0 rounded-[0.375rem] w-full placeholder:text-[#668199];
+  }
+  p{
+    @apply text-xl text-white font-Gilroy;
+  }
+  h1{
+    @apply md:text-88 text-28 font-bold text-white dark:text-primary;
+  }
+  h2{
+    @apply md:text-40 text-24 font-bold text-white dark:text-primary;
+  }
+  h3{
+    @apply md:text-28 text-18 font-bold text-white dark:text-primary;
+  }
+  h4{
+    @apply text-24 font-bold text-white dark:text-primary;
+  }
+  h5{
+    @apply text-22 font-bold text-white dark:text-white;
+  }
+  .container{
+    @apply w-full max-w-[80rem] my-0 mx-auto py-0 sm:px-7 px-5;
+  }
+  .m_icon{
+    @apply inline-block h-[3.8125rem] w-[3.4375rem] bg-no-repeat bg-cover object-cover;
+  }
+  .box_shadow{
+    @apply shadow-[0px_3px_20px_0px_#3B4B68];
+  }
+  .header_shadow{
+    @apply shadow-[0_2px_20px_rgba(0,0,0,0.05)];
+  }
+  section{
+    @apply lg:py-24 py-10;
+  }
+
+  /* Default Button CSS Start */
+  .btn_yellow {
+    @apply relative inline-block text-center align-middle cursor-pointer text-DarkOrange font-bold text-xl rounded-full leading-[1.2] bg-[liner-gradient(to_bottom,#fff_0%,#faf05a_100%)] px-[2.875rem] py-[1.125rem] shadow-[0px_0px_10px_0px_#F2B377] hover:shadow-[0px_0px_10px_0px_#fff];
+    background: radial-gradient(248.84% 50% at 50% 50%, #ffffff 0%, #faf05a 100%);
+  }
+  .btn_white {
+    @apply relative inline-block text-center align-middle cursor-pointer text-DarkBlue font-bold text-xl rounded-full leading-[1.2] bg-[liner-gradient(to_bottom,#fff_0%,#faf05a_100%)] px-[2.875rem] py-[1.125rem] shadow-[0px_0px_24px_0px_#00000080];
+    background: radial-gradient(248.84% 50% at 50% 50%, #ffffff 0%, #D5D8E3 100%);
+  }
+}
