@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Above = () => {
+const AboveCraft = () => {
   return (
     <section className="bg-[url('/images/above-bg.png')] bg-no-repeat bg-cover h-full w-full">
         <div className='container'>
@@ -17,4 +17,4 @@ const Above = () => {
   )
 }
 
-export default Above
+export default AboveCraft

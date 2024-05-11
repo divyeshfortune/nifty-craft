@@ -1,14 +1,14 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import Above from '@/components/above'
 import React from 'react'
+import AboveCraft from '@/components/AboveCraft'
 
 const Home = () => {
   return (
     <>
     <Header/>
     <Hero/>
-    <Above/>
+    <AboveCraft/>
     </>
     
   )
